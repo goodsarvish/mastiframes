@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MastiFrames</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>MastiFrames</h1>
+    <div class="controls">
+      <label><input type="checkbox" id="ownerToggle"> Owner Mode</label>
+      <button id="refresh">Reload Products</button>
+    </div>
+  </header>
+  <main class="container">
+    <div id="grid" class="grid"></div>
+  </main>
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeModal" class="close">X</button>
+      <img id="modalImg" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div id="modalActions"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
